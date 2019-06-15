@@ -1,0 +1,61 @@
+.my_content {
+  position: absolute;
+  top: 44px;
+  bottom: 50px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.my_content .nav_left {
+  float: left;
+  width: 80px;
+  height: 100%;
+  position: relative;
+}
+.my_content .nav_left .mui-scroll {
+  width: 100%;
+  border-radius: 50%;
+}
+.my_content .nav_left .mui-scroll .nav_link {
+  background-color: #fff;
+}
+.my_content .nav_left .mui-scroll .nav_link ul {
+  width: 100%;
+}
+.my_content .nav_left .mui-scroll .nav_link ul li {
+  width: 100%;
+}
+.my_content .nav_left .mui-scroll .nav_link ul li .active {
+  border-right: 1px solid transparent;
+  background-color: #f5f5f5;
+}
+.my_content .nav_left .mui-scroll .nav_link ul li > a {
+  width: 100%;
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.my_content .nav_right {
+  height: 100%;
+  position: relative;
+  margin: 10px 0 0 90px;
+}
+.my_content .nav_right .mui-scroll-wrapper .mui-scroll {
+  background-color: #fff;
+}
+.my_content .nav_right .mui-scroll-wrapper .mui-scroll ul {
+  margin: 10px;
+}
+.my_content .nav_right .mui-scroll-wrapper .mui-scroll ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.my_content .nav_right .mui-scroll-wrapper .mui-scroll ul li a {
+  display: inline-block;
+}
+.my_content .nav_right .mui-scroll-wrapper .mui-scroll ul li a img {
+  width: 100%;
+}

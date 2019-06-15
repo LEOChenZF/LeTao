@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/mui/css/icons-extra.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/category.css">
+    <script src="./assets/mui/js/mui.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./js/category.js"></script>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav lt_header">
+        <h1 class="mui-title">乐淘云购</h1>
+        <a href="./search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+
+    <div class="my_content">
+        <div class="nav_left">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="nav_link">
+                        <ul id="dataList">
+                            <script type="text/template" id="templateId">
+
+
+                                    {{each rows}}
+                                    <li  data-id="{{$value.id}}">
+                                        <a href="javascript:;">
+                                            {{$value.categoryName}}
+                                        </a>
+                                    </li>
+                                    {{/each}}
+                            
+                                </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_right">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul id="erdataList">
+                        <script type="text/template" id="erTemplateId">
+                                {{each rows}}
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src=" {{$value.brandLogo}}" alt="">
+                                        <p> {{$value.brandName}}</p>
+                                    </a>
+                                </li>
+                                {{/each}}
+
+                                
+
+                            </script>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="mui-bar mui-bar-tab my-footer lt_nav">
+        <a class="nav_tab mui-active " href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="nav_tab" href="./category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="nav_tab" href="cart.html">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="nav_tab" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+
+
+    <script src="./assets/template/template-web.js"></script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,59 @@
+.guide {
+  margin: 10px 10px;
+  text-align: center;
+  background-color: #ccc;
+  line-height: 30px;
+}
+.guide .price {
+  font-size: 12px;
+}
+.guide .price span {
+  font-size: 14px;
+}
+.guide .salesVolume {
+  font-size: 12px;
+}
+.guide .salesVolume span {
+  font-size: 12px;
+}
+.product > img {
+  width: 100%;
+}
+.product .product_list {
+  width: 100%;
+}
+.product .product_list ul {
+  width: 100%;
+}
+.product .product_list ul li a {
+  float: left;
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0px 1px 5px 0px #ccc;
+  text-align: center;
+  font-size: 14px;
+  margin: 8px;
+  width: 45%;
+  padding: 5px;
+}
+.product .product_list ul li a img {
+  width: 100%;
+}
+.product .product_list ul li a span:nth-of-type(1) {
+  color: #8f8f94;
+}
+.product .product_list ul li a p {
+  display: inline;
+  color: #FF3300;
+  font-size: 12px;
+}
+.product .product_list ul li a span:nth-of-type(2) {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.product .product_list ul li a form > input {
+  color: #fff;
+  background-color: #006699;
+}
